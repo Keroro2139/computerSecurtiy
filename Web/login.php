@@ -12,7 +12,7 @@
 	}
 	else
 	{
-			// $_SESSION["UserID"] = $objResult["UserID"];
+			$_SESSION["UserID"] = $objResult["UserID"];
 			$_SESSION["Status"] = $objResult["Status"];
 
 			session_write_close();
