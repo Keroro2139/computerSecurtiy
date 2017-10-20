@@ -11,12 +11,11 @@ if (isset($_POST['submit'])) {
 
 	$user = $_POST['user'];
 	$pass = $_POST['pass'];
-
 	$sql = "SELECT * FROM member WHERE Username='$user' AND Password='$pass'";
 	$result = $conn->query($sql) or die ("Username or Password incorrect");
-	
-
-
+	if($result && $user == "admin"){
+		echo "<script>alert('Welcome to you admin'); window.location='adminPage.php'";
+	}
 	$conn->close();
 }	
 ?>
