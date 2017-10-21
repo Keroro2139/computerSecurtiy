@@ -23,9 +23,12 @@
             <div class="uk-width-medium-1-1 uk-row-first" style="margin-top: 50px">
             	<div class="uk-vertical-align uk-text-center">
 					<div class="uk-vertical-align-middle uk-width-1-1">
-					<h1>Hello user!!!</h1>
-					Name : <?php echo $q["Name"]; ?>
-				</div>
+						<h1>Hello user!!!</h1>
+						Name : <?php echo $q["Name"]; ?> <br><br>
+						<form action="logout.php">
+							<input class="uk-button uk-button-danger" type="submit" name="submit" value="Logout">
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
