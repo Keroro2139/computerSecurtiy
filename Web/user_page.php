@@ -18,7 +18,17 @@
 	<script src="uikit/dist/js/uikit-icons.min.js"></script>
 </head>
 <body>
-		<h1>Hello user!!!</h1>
-		Name : <?php echo $q["Name"]; ?>
+	<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+		<div class="uk-grid" data-uk-grid-margin="">
+            <div class="uk-width-medium-1-1 uk-row-first" style="margin-top: 50px">
+            	<div class="uk-vertical-align uk-text-center">
+					<div class="uk-vertical-align-middle uk-width-1-1">
+					<h1>Hello user!!!</h1>
+					Name : <?php echo $q["Name"]; ?>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
