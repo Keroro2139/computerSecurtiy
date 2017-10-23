@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="uikit/dist/css/uikit.min.css">
 	<script src="uikit/dist/js/uikit.min.js"></script>
 	<script src="uikit/dist/js/uikit-icons.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 
@@ -26,14 +27,16 @@
 						<table class="uk-table uk-table-hover uk-table-divider">
 						    <thead>
 						        <tr>
+						        	<th><center><b>No.</b></center></th>
 						            <th><center><b>Name</b></center></th>
-						            <th><center><b>Status</b></center></th>
+						            <th><center><b>Status</b></center></th> 
 						        </tr>
 						    </thead>
 						    <tbody class="uk-vertical-align uk-text-center">
 						            <?php
 				            			while ($user = mysql_fetch_array($q)) {
 				               				echo '<tr>';
+				               				echo '<td>'.'</td>';
 				               				echo '<td>'.$user['Name'].'</td>';
 				               				echo '<td>'.$user['Status'].'</td>';
 				               				echo '</tr>';

@@ -1,0 +1,12 @@
+/*start auto No. table row*/
+body {
+	counter-reset: Serial;
+}
+table {
+	border-collapse: separate;
+}
+tr td:first-child:before {
+	counter-increment: Serial;
+	content: counter(Serial);
+}
+/*end auto No. table row*/
