@@ -7,13 +7,70 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.31/css/uikit.min.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.31/js/uikit.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.31/js/uikit-icons.min.js"></script>
+	<style>
+	/* Center the loader */
+	#loader {
+	  position: absolute;
+	  left: 50%;
+	  top: 50%;
+	  z-index: 1;
+	  width: 50px;
+	  height: 50px;
+	  margin: -75px 0 0 -75px;
+	  border: 16px solid #f3f3f3;
+	  border-radius: 50%;
+	  border-top: 16px solid #000000;
+	  width: 120px;
+	  height: 120px;
+	  -webkit-animation: spin 1.5s linear infinite;
+	  animation: spin 1.5s linear infinite;
+	}
+
+	@-webkit-keyframes spin {
+	  0% { -webkit-transform: rotate(0deg); }
+	  100% { -webkit-transform: rotate(360deg); }
+	}
+
+	@keyframes spin {
+	  0% { transform: rotate(0deg); }
+	  100% { transform: rotate(360deg); }
+	}
+
+	/* Add animation to "page content" */
+	.animate-bottom {
+	  position: relative;
+	  -webkit-animation-name: animatebottom;
+	  -webkit-animation-duration: 1s;
+	  animation-name: animatebottom;
+	  animation-duration: 1s
+	}
+
+	@-webkit-keyframes animatebottom {
+	  from { bottom:-100px; opacity:0 } 
+	  to { bottom:0px; opacity:1 }
+	}
+
+	@keyframes animatebottom { 
+	  from{ bottom:-100px; opacity:0 } 
+	  to{ bottom:0; opacity:1 }
+	}
+
+	#myDiv {
+	  display: none;
+	  text-align: center;
+	}
+	</style>
 </head>
-<body>
+<body onload="myFunction()" style="margin:0;">
+	<div id="loader"></div>
+	<div style="display:none;" id="myDiv" class="animate-bottom">	
+<!-- ************************************************************************************************** -->
 	<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
 		<div class="uk-grid" data-uk-grid-margin>
             <div class="uk-width-medium-1-1 uk-row-first" style="margin-top: 50px">
             	<div class="uk-vertical-align uk-text-center">
 					<div class="uk-vertical-align-middle uk-width-1-1">
+						<div class="uk-background-image@l uk-background-cover uk-height-medium  uk-flex uk-flex-center uk-flex-middle" style="background-image: url(FoodCover.jpg);">
 						<form action="login.php" method="POST">
 							<div class="uk-margin">
 								<div class="uk-inline">
@@ -29,10 +86,24 @@
 							</div>
 							<input class="uk-button uk-button-primary" type="submit" name="submit" value="Login"></button>
 						</form>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+<!-- ************************************************************************************************** -->
+	</div>
+	<script>
+		var myVar;
+		function myFunction() {
+		    myVar = setTimeout(showPage, 1800);
+		}
+		function showPage() {
+		  document.getElementById("loader").style.display = "none";
+		  document.getElementById("myDiv").style.display = "block";
+		}
+	</script>
+	
 </body>
 </html>
