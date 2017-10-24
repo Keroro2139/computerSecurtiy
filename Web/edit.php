@@ -32,11 +32,11 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td><input size="5" class="uk-input" type="text" name="uid" value="<?php echo $q["UserID"];?>"></td>
-								<td><input size="5" class="uk-input" type="text" name="user" value="<?php echo $q["Username"];?>"></td>
-								<td><input size="5" class="uk-input" type="text" name="pass" value="<?php echo $q["Password"];?>"></td>
-								<td><input size="5" class="uk-input" type="text" name="name" value="<?php echo $q["Name"];?>"></td>
-								<td><input size="5" class="uk-input" type="text" name="status" value="<?php echo $q["Status"];?>"></td>
+								<td><input class="uk-input" type="text" name="uid" value="<?php echo $q["UserID"];?>"></td>
+								<td><input class="uk-input" type="text" name="user" value="<?php echo $q["Username"];?>"></td>
+								<td><input class="uk-input" type="text" name="pass" value="<?php echo $q["Password"];?>"></td>
+								<td><input class="uk-input" type="text" name="name" value="<?php echo $q["Name"];?>"></td>
+								<td><input class="uk-input" type="text" name="status" value="<?php echo $q["Status"];?>"></td>
 							</tr>
 						</tbody>
 					</table>
