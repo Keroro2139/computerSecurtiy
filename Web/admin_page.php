@@ -9,9 +9,9 @@
 	<title>Welcome admin</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="uikit/dist/css/uikit.min.css">
-	<script src="uikit/dist/js/uikit.min.js"></script>
-	<script src="uikit/dist/js/uikit-icons.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.31/css/uikit.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.31/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.31/js/uikit-icons.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
