@@ -14,7 +14,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.31/js/uikit-icons.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
-<body>
+<body style="background-color: #F7F2E0;">
 
 	<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
 		<div class="uk-grid" data-uk-grid-margin="">

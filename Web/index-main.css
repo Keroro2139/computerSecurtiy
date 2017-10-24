@@ -1,0 +1,10 @@
+html, body{
+  height: 100%;
+}
+body { 
+	background-color: #E0F8E6;
+}
+div, body {
+  margin: 0;
+  padding: 0;
+}
