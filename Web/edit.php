@@ -32,7 +32,7 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td><input size="5" class="uk-input" type="text" name="id" value="<?php echo $q["UserID"];?>"></td>
+								<td><input size="5" class="uk-input" type="text" name="uid" value="<?php echo $q["UserID"];?>"></td>
 								<td><input size="5" class="uk-input" type="text" name="user" value="<?php echo $q["Username"];?>"></td>
 								<td><input size="5" class="uk-input" type="text" name="pass" value="<?php echo $q["Password"];?>"></td>
 								<td><input size="5" class="uk-input" type="text" name="name" value="<?php echo $q["Name"];?>"></td>
@@ -40,6 +40,14 @@
 							</tr>
 						</tbody>
 					</table>
+					<div class="uk-button-group">
+						<form action="admin_page.php">
+							<button class="uk-button uk-button-default uk-button-small">Back</button>
+						</form>
+						<form action="save_edit.php">
+							<button class="uk-button uk-button-primary uk-button-small">Submit</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
